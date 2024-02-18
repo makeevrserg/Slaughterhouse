@@ -21,14 +21,12 @@ dependencies {
     compileOnly(libs.minecraft.paper.api)
     implementation(libs.minecraft.bstats)
     // Local
-    implementation(projects.modules.apiLocal)
-    implementation(projects.modules.apiRemote)
     implementation(projects.modules.core)
 }
 
 setupSpigotProcessor()
 
-val destination = File("D:\\Minecraft Servers\\Servers\\esmp-configuration\\smp\\plugins")
+val destination = File("D:\\Minecraft Servers\\Servers\\esmp-configuration\\arena\\plugins")
     .takeIf(File::exists)
     ?: File(rootDir, "jars")
 
